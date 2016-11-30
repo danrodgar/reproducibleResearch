@@ -259,11 +259,63 @@
 
 \section{Introduction}
 
+\subsection{The practice of research}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Introduction}{The practice of research (I)}
+	\vspace{-0.3cm}
+	\begin{columns}
+	\column{.6\textwidth}
+	What is research?
+    \begin{itemize}
+		\item In short, writting papers
+    \end{itemize}
+	Many processes involved
+	\begin{itemize}
+		\item Code development
+		\item Dataset collection
+		\item Scripts for everything
+		\item Figures creation
+		\item Statistics and analysis
+	\end{itemize}
+	The review comes, after $6$ months
+	\begin{itemize}
+		\item ... you must repeat an experiment
+		\item ... or change a figure or ...
+	\end{itemize}
+	\column{.4\textwidth}
+		\includegraphics<2>[height=\linewidth]{figs/OhFuck.jpg}
+	\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Introduction}{The practice of research (II)}
+	Even worse: Imagine you need to reproduce other's experiments
+    \begin{itemize}
+		\item Or any one else reproduce your experiments ... \alert{in teams}
+    \end{itemize}
+	
+	Need of many assets
+    \begin{itemize}
+		\item Experiment run
+		\item Data analysis
+		\item Experiment documentation
+		\item Paper authoring
+		\item \alert{On-line publication}
+    \end{itemize}
+
+	Need of procedures and tools to handle this
+	\begin{block}{Our objective}
+	Formalize the whole publishing \textit{collaborative} process
+	\end{block}
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Reproducible research}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Introduction}{What is reproducible research?}
+\begin{frame}{Introduction}{Reproducible research}
 	\vspace{-0.3cm}
 	\begin{center}
 	\begin{columns}
@@ -277,11 +329,35 @@
 	\end{columns}
 	\end{center}
 	
+	Reproducible research is a cornerstone of research
     \begin{itemize}
-	\item Many courses, Web sites, etc.
-	\item 
+	\item Science \textbf{must} be reproducible
+    \end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Components of reproducible research}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Introduction}{Components of reproducible research}
+	We can distinguish two types of experiments
+	\begin{itemize}
+	\item Repetible 
+	\item Reproducible
+	\end{itemize}
+
+	Reproducible research involves
+    \begin{itemize}
+	\item Collaborative code development (\texttt{Git}, \texttt{GitHub})
+	\item Experiment run (\texttt{Python})
+	\item Statistical analysis (\texttt{R})
+	\item Process documentation (\texttt{Markdown})
+	\item Results writting (\texttt{Bookdown}, \texttt{Knitr}, \texttt{Swave})
+	\item Assets publication (\texttt{GitHub})
     \end{itemize}
 \end{frame}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
