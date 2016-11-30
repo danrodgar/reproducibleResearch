@@ -1,3 +1,3 @@
-# reproducibleResearch
+# Reproducible Research
 
-Slides about reproducible research with R
+Slides about reproducible research with R.
