@@ -370,18 +370,21 @@
 \begin{frame}{Literate Programming}
 	\begin{center}
 	\begin{columns}
-	\column{.95\textwidth}
+	\column{.7\textwidth}
 	\begin{block}{}
 	\begin{center}
-	Literate programming is an approach to programming introduced by Donald Knuth in which a program is given as an explanation of the program logic in a natural language, such as English, interspersed with snippets of macros and traditional source code, from which a compilable source code can be generated.
+	Literate programming is an approach to programming introduced by D. Knuth in which a program is given as an explanation of the program logic in a natural language, such as English, interspersed with snippets of macros and traditional source code, from which a compilable source code can be generated.
 	\end{center}
 	\end{block}
+	\column{.3\textwidth}
+	  \includegraphics[height=\linewidth]{figs/Literate_Programming_book_cover.jpg}
 	\end{columns}
 	\end{center}
 	
       \begin{itemize}
-	\item It has been around for many years...
-	\item \texttt{https://en.wikipedia.org/wiki/Literate\_programming}
+	\item \begin{footnotesize}
+	\texttt{https://en.wikipedia.org/wiki/Literate\_programming}	                                                                  \end{footnotesize}
+	
       \end{itemize}
 \end{frame}
 
@@ -466,55 +469,76 @@ Wikipedia:
 
 \begin{frame}{What is RStudio?} %{What is the R language?}
 
-R is a programming language and software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing.The R language is widely used among statisticians and data miners for developing statistical software and data analysis.
+Popular IDE for R.
+%\includegraphics{figs/RStudio-Logo-Blue-Gray-125.png}%[height=.15\textwidth]
+\includegraphics[height=.50\textwidth]{figs/RStudio.png}
 
-Wikipedia: \texttt{https://en.wikipedia.org/wiki/R\_(programming\_language)}
+\texttt{https://www.rstudio.com/}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{RStudio?} %{What is the R language?}
+
+Well known package authors work for RStudio.
+%\includegraphics{figs/RStudio-Logo-Blue-Gray-125.png}%[height=.15\textwidth]
+\includegraphics[height=.50\textwidth]{figs/r-packages.png}
+
+
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection[Markdown]{Markdown}
+\subsection[Packages]{Packages for Reproducible Research}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Markdown} %{What is the R language?}
 
-Extremely easy to learn.
-\end{frame}
+Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection[Markdown]{knitr}
-
-\begin{frame}{knitr} %{What is the R language?}
-
-http://yihui.name/knitr/demo/minimal/
+Extremely easy to learn and extensively used in RStudio.
 
 \end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection[Markdown]{Bookdown}
-
-\begin{frame}{knitr} %{What is the R language?}
-
-http://yihui.name/knitr/demo/minimal/
-
-\end{frame}
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{knitr} %{What is the R language?}
+
+knitr is an engine for dynamic report generation with R. It is a package in the statistical programming language R that enables integration of R code into LaTeX, LyX, HTML, Markdown, AsciiDoc, and reStructuredText documents.
+\texttt{https://en.wikipedia.org/wiki/Knitr}
 
 knitr extracts R code in the input document, evaluates it and writes the results to the output document
 
-http://yihui.name/knitr/
-
 Rnw, Markdown, HTML and LaTeX
+
+\texttt{http://yihui.name/knitr/}
+
+\texttt{http://yihui.name/knitr/demo/minimal/}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Bookdown} %{What is the R language?}
+
+It is way of authoring books with RMarkdown generating PDF, handouts and slides automatically.
+
+\texttt{https://www.rstudio.com/resources/webinars/introducing-bookdown/}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Rnw} %{What is the R language?}
+
+Inserts R into Latex documents.
 
 \end{frame}
 
