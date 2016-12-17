@@ -437,6 +437,244 @@
       \end{itemize}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Markdown
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Markdown}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{First contact}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Markdown}{First contact (I)}
+	\vspace{-0.3cm}
+	\begin{columns}
+	\column{.4\textwidth}
+	Markdown: Trivial markup
+	\begin{itemize}
+		\item Simple
+		\item Very simple
+		\item Extremely simple
+		\item Did I say it's simple?
+	\end{itemize}
+	VERY powerful
+	\begin{itemize}
+		\item Several outputs
+		\item Professional quality
+		\item ... and simple!
+	\end{itemize}
+	\column{.6\textwidth}
+		\begin{exampleblock}{Markdown example}
+			\vspace{-0.3cm}
+			\begin{lstlisting}[mathescape]
+# I am a header
+## I am a subheader
+
+Regular, *italic* and **bold**
+
+- List item 1
+- List item 2
+
+[I am a link](http://foo.com)
+
+![I am a pic](markdown.png)
+
+~~~C
+printf("Hello, world");
+~~~
+			\end{lstlisting}
+			\vspace{-0.2cm}
+		\end{exampleblock}
+	\end{columns}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[plain]{Markdown}{First contact (II)}
+ \begin{columns}
+     \column{0.3\dimexpr\paperwidth-10pt}
+	 	\centering PDF\\
+		\includegraphics[height=\linewidth]{figs/pdf.png} 
+     \column{0.3\dimexpr\paperwidth-10pt}
+	 	\centering Word\\
+		\includegraphics[height=\linewidth]{figs/docx.png} 
+     \column{0.3\dimexpr\paperwidth-10pt}
+	 	\centering HTML\\
+		\includegraphics[height=\linewidth]{figs/html.png} 
+  \end{columns}
+
+ \begin{columns}
+     \column{0.3\dimexpr\paperwidth-10pt}
+	 	\centering OpenOffice \\
+		\includegraphics[height=\linewidth]{figs/odt.png} 
+     \column{0.3\dimexpr\paperwidth-10pt}
+	 	\centering \LaTeX \\
+		\includegraphics[height=\linewidth]{figs/latex.png} 
+     \column{0.3\dimexpr\paperwidth-10pt}
+	 	\centering Beamer presentation \\
+		\includegraphics[height=\linewidth]{figs/beamer.png} 
+\end{columns}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Using markdown}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Markdown}{Using markdown}
+	The easy style: Markdown editors
+		\begin{itemize}
+		\item Desktop: Remarkable, MacDown, ...
+		\item Online editors: \href{http://dillinger.io}{(Dillinger)}, \href{https://stackedit.io/}{(StackEdit)}
+		\end{itemize}
+	The hacker style: Command-line markdown parser, \alert{pandoc}
+		\begin{enumerate}
+		\item Edit file with any text editor
+		\item ``Compile'' the document
+		\begin{itemize}
+		\item \texttt{pandoc simple.md -o simple.pdf}
+		\item \texttt{pandoc simple.md -o simple.docx}
+		\end{itemize}
+		\end{enumerate}
+	The professional style: Integrated in a ecosystem 
+	\begin{itemize}
+		\item GitHub 
+		\item R markdown, Knitr, ...
+		\item iPython, Jupiter, ...
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{``Advanced'' markdown}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Markdown}{``Advanced'' markdown (I)}
+	Markdown is loosely defined
+		\begin{itemize}
+		\item Several elements not defined in original markdown
+		\item Variations among implementations
+		\item We follow GitHub markdown style
+		\end{itemize}
+
+	\begin{columns}
+     \column{0.4\linewidth}
+	\begin{block}{Lists}
+	\begin{verbatim}
+	* Bullet 1
+	+ Cross 1
+	    - Nested item 1
+		- Nested item 2
+	1. Ordered item 1
+	2. Ordered item 2
+	\end{verbatim}
+	\end{block}
+
+     \column{0.6\linewidth}
+	\begin{block}{Tables}
+	\begin{verbatim}
+	Header 1     | Header 2
+	------------ | -------------
+	Cell (1,1)   | Cell (1,2)
+	Cell (2,1)   | Cell (2,2)
+	\end{verbatim}
+	\end{block}
+
+	\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Markdown}{``Advanced'' markdown (II)}
+	\begin{columns}
+     \column{0.6\linewidth}
+	\begin{block}{Blockquotes}
+	\begin{verbatim}
+	Don Quixote said:
+
+	> Until death it is all life
+	\end{verbatim}
+	\end{block}
+
+     \column{0.4\linewidth}
+	\begin{block}{Mentions}
+	\begin{verbatim}
+	@username
+	\end{verbatim}
+	Used also to reference
+	\end{block}
+	\end{columns}
+
+	\begin{columns}
+     \column{0.8\linewidth}
+	\begin{block}{Maths}
+	Same syntax than \LaTeX
+
+	\verb|\sqrt{\frac{a}{b}}| $\rightarrow$ $\sqrt{\frac{a}{b}}$
+
+	\verb|\lim_{x \to \infty} e^{-x}| $\rightarrow$ $\lim_{x \to \infty} e^{-x}$
+	\end{block}
+
+     \column{0.2\linewidth}
+	\end{columns}
+
+	\bigskip
+	\href{https://guides.github.com/features/mastering-markdown/}{(Mastering Markdown)}
+	\href{https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet}{(Markdown Cheatsheet)}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Metadata}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[plain,fragile]{Markdown}{Metadata (I)}
+	Metadata: Data about data
+	\begin{itemize}
+		\item In our case title, authors, affiliation, etc
+		\item Header (Valid in pandoc)
+	\end{itemize}
+\footnotesize{
+	\begin{exampleblock}{}
+	\lstinputlisting{examples/complete.md}
+	\end{exampleblock}
+	}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Markdown}{Metadata (II)}
+ \begin{columns}
+     \column{0.31\dimexpr\paperwidth-10pt}
+		\centering \includegraphics[width=\linewidth]{figs/metadataPDF.png} 
+     \column{0.31\dimexpr\paperwidth-10pt}
+		\centering \includegraphics[width=\linewidth]{figs/metadataHTML.png} 
+     \column{0.31\dimexpr\paperwidth-10pt}
+		\centering \includegraphics[width=\linewidth]{figs/metadataBeamer.png} 
+\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Markdown}{Metadata (III)}
+ \begin{columns}
+     \column{0.5\textwidth}
+	\begin{exampleblock}{Template}
+	\lstinputlisting{examples/template.md}
+	\end{exampleblock}
+ \end{columns}
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% R
