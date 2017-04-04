@@ -286,7 +286,7 @@
 		\item Figures creation
 		\item Statistics and analysis
 	\end{itemize}
-	The review comes, after $6$ months
+	The review comes, \alert{after $6$ months}
 	\begin{itemize}
 		\item ... you must repeat an experiment
 		\item ... or change a figure or ...
@@ -369,7 +369,7 @@
     Experiment run  & \texttt{Python}, \texttt{Lua}   \\ \hline
     Statistical analysis  & \texttt{R}, \texttt{RStudio}   \\ \hline
 	Documentation & \texttt{Markdown}   \\ \hline
-	Results writting	  & \texttt{Bookdown}, \texttt{Knitr}, \texttt{Swave} \\ \hline
+	Results writting	  & \LaTeX \\ \hline
 	Assets publishing & \texttt{GitHub}\\ \hline
 	\end{tabular}
 	\end{table}
@@ -663,13 +663,15 @@ printf("Hello, world");
 		\item In our case title, authors, affiliation, etc
 		\item Header (Valid in pandoc)
 	\end{itemize}
-\footnotesize{
+
+\tiny{
 	\begin{exampleblock}{}
-	\vspace{-0.2cm}
-	\lstinputlisting{examples/complete.md}
+	%\lstinputlisting{examples/complete.md}
+	\verbatiminput{examples/complete.md}
 	\vspace{-0.2cm}
 	\end{exampleblock}
 	}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
